@@ -2,9 +2,11 @@ CC=gcc
 FLAGS=-Wall -pedantic -ansi
 ALLDEPS=Approximations.o Recursion.o
 LIBS=-lm
-TARGET=midpoint
+BINDIR=bin/
+TARGET=$(BINDIR)midpoint
 
 all:	midpoint.c $(ALLDEPS) $(LIBS)
+	mkdir $(BINDIR)
 	$(CC) $(FLAGS) $^ -o $(TARGET)
 
 %.o:	%.c
@@ -12,4 +14,4 @@ all:	midpoint.c $(ALLDEPS) $(LIBS)
 
 clean:
 	rm *.o
-	rm $(TARGET)
+	rm -rf $(BINDIR)
