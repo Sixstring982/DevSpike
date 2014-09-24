@@ -8,6 +8,7 @@
 
 #define ABS(X) ((X) > 0 ? (X) : -(X))
 #define DIST2D(X, Y) sqrt((X) * (X) + (Y) * (Y))
+#define DIST3D(X, Y, Z) sqrt((X) * (X) + (Y) * (Y) + (Z) * (Z))
 
 typedef enum {false, true} bool;
 
