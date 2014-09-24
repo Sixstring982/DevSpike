@@ -38,7 +38,7 @@ double doTrapezoid(DoubleFunc f, double start, double end, int intervals)
   double intermediate;
   double intervalSize = (end - start) / intervals;
 
-  for(i = 0; i < intervals - 1; i++)
+  for(i = 0; i < intervals; i++)
   {
     double f1 = f(start + (i * intervalSize));
     double f2 = f(start + ((i + 1) * intervalSize));
