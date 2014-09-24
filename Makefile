@@ -1,6 +1,6 @@
 CC=gcc
 FLAGS=-Wall -pedantic -ansi
-ALLDEPS=Approximations.o
+ALLDEPS=Approximations.o Recursion.o
 LIBS=-lm
 TARGET=midpoint
 
